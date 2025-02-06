@@ -1,5 +1,10 @@
 Employee_File="employee.dat"
 Employee_Id=1000
+
+
+update_employee_id(){
+    Employee_Id=$((Employee_Id + 1))
+}
 while true;
     do
     echo "=============================="
@@ -19,6 +24,7 @@ while true;
         1)
             echo "Adding Employee..."
             ./addEmp.sh "$Employee_Id" "$Employee_File"
+            update_employee_id
             ;;
         2)
            echo "Modifying User..."

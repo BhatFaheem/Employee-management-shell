@@ -43,8 +43,7 @@ while true;
            ./modifyEmp.sh "$Employee_Id" "$Employee_File"
            ;;
         3)
-            echo "Deleting User..."
-           ./delEmp.sh "$Employee_Id" "$Employee_File"
+           ./delEmp.sh  "$Employee_File"
            ;;
         4)
            ./listEmp.sh "$Employee_File"

@@ -52,6 +52,7 @@ while true;
         5)
             echo "Quiting..."
             rm "$Employee_File"
+            rm "$Employee_Id_File"
             exit 0
             ;;
     esac

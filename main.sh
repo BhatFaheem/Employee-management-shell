@@ -39,8 +39,7 @@ while true;
             update_employee_id
             ;;
         2)
-           echo "Modifying User..."
-           ./modifyEmp.sh "$Employee_Id" "$Employee_File"
+           ./modifyEmp.sh "$Employee_File"
            ;;
         3)
            ./delEmp.sh  "$Employee_File"

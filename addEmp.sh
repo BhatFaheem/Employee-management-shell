@@ -14,7 +14,7 @@ while [[ ! "$emp_dept" =~ ^[A-Z]{1,4}$ ]];
         read emp_dept
 done
 read -p "Enter the Salary of Employee : " emp_salary
-while [[ ! "$emp_salary" =~ ^[0-9]+(\.[0-9]+)?$ ]];
+while [[ ! "$emp_salary" =~ ^[0-9]{1,10}(\.[0-9]{1,2})?$ ]]; 
     do
         echo "Invalid Salary . Please try a valid number : "
         read emp_salary
